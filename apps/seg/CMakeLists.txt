@@ -13,7 +13,9 @@ set(COMMON_TARGET_LIBRARIES
 set(MODULE_NAME segimage2itkimage)
 
 set(MODULE_SRCS
-  ${MODULE_NAME}.cxx)
+  ${MODULE_NAME}.cxx
+  ${CMAKE_SOURCE_DIR}/jsoncpp/jsoncpp.cpp
+  )
 
 SEMMacroBuildCLI(
   NAME ${MODULE_NAME}
@@ -40,7 +42,9 @@ set(MODULE_NAME itkimage2segimage)
 
 set(MODULE_SRCS
   ${MODULE_NAME}.cxx
-  QIICRUIDs.h)
+  ${CMAKE_SOURCE_DIR}/jsoncpp/jsoncpp.cpp
+  QIICRUIDs.h
+  )
 
 SEMMacroBuildCLI(
   NAME ${MODULE_NAME}

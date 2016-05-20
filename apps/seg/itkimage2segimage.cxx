@@ -45,6 +45,9 @@
 // versioning
 #include "dcmqiVersionConfigure.h"
 
+#include "json/json.h"
+//#include "json/json-forwards.h"
+
 // CLP inclides
 #include "itkimage2segimageCLP.h"
 
@@ -86,6 +89,14 @@ void checkValidityOfFirstSrcImage(DcmSegmentation *segdoc) {
 int main(int argc, char *argv[])
 {
   PARSE_ARGS;
+
+  Json::Value root;
+  Json::Reader jsonReader;
+
+  if(jsonMeta.size()){
+    bool parsingSuccessful = jsonReader.parse(jsonMeta, root, true);
+    return 0;
+  }
 
   //dcemfinfLogger.setLogLevel(dcmtk::log4cplus::OFF_LOG_LEVEL);
 

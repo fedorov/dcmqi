@@ -115,6 +115,14 @@
       <description>Apply compression to PixelData.</description>
     </boolean>
 
+    <string>
+      <name>jsonMeta</name>
+      <label>JSON metadata</label>
+      <channel>input</channel>
+      <longflag>jsonMeta</longflag>
+      <description>JSON file to store metadate needed for creating DICOM SEG.</description>
+    </string>
+
   </parameters>
 
 </executable>
