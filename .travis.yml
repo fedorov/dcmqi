@@ -1,6 +1,7 @@
 env:
- - CMAKE_VERSION_MAJOR=3.5
- - CMAKE_VERSION=3.5.2
+  global:
+    - CMAKE_VERSION_MAJOR="3.5"
+    - CMAKE_VERSION="3.5.2"
 language: c++
 os:
 - osx
