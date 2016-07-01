@@ -9,6 +9,7 @@ env:
 compiler:
 - clang
 before_script:
+- env
 - cmake --version
 - clang --version
 - mkdir /Users/travis/build/QIICR/dcmqi-build
