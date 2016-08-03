@@ -3,6 +3,12 @@
   "id" : "http://qiicr.org/schema/dcmqi/seg-schema.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
 
+  "oneOf" : [
+    { "required" : ["compositeContext"] },
+    { "required" : ["dicomInstancesFileNameList"]}
+  },
+
+
   "seriesAttributes": {
     "type" : "object",
     "properties" : {

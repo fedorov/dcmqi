@@ -32,6 +32,103 @@
         "CodeMeaning" : { "type":"LO", "default" : "Tissue"}
       },
       "required" : ["CodeValue","CodingSchemeDesignator","CodeMeaning"]
+    },
+
+    "dicomInstancesFileNameList" : {
+      "type" : "array",
+      "items" : "string"
+    },
+
+    "compositeContext" : {
+      "type" : "object",
+      "properties" : {
+
+        "iodPatientModule" : {
+          "type" : "object",
+          "properties" : {
+            "PatientName" : {
+              "type" : "string",
+              "default" : ""
+            },
+            "PatientID" : {
+              "type" : "string",
+              "default" : ""
+            },
+            "PatientBirthDate" : {
+              "type" : "string",
+              "default" : ""
+            },
+            "PatientSex" : {
+              "type" : "string",
+              "default" : ""
+            }
+          }
+        },
+
+        "iodGeneralStudyModule" : {
+          "type" : "object",
+          "properties" : {
+            "StudyInstanceUID" : {
+              "type" : "UI",
+              "default" : "1.1.1.1"
+            },
+            "StudyDate" : {
+              "type" : "DA",
+              "default" : ""
+            },
+            "StudyTime" : {
+              "type" : "TA",
+              "default" : ""
+            },
+            "ReferringPhysicianName" : {
+              "type" : "PN",
+              "default" : ""
+            },
+            "StudyID" : {
+              "type" : "string",
+              "default" : ""
+            },
+            "AccessionNumber" : {
+              "type" : "string",
+              "default" : ""
+            }
+          }
+        },
+
+        "iodGeneralEquipmentModule" : {
+          "type" : "object",
+          "properties" : {
+            "Manufacturer" : {
+              "type" : "string",
+              "default" : ""
+            }
+          }
+        },
+
+        "iodGeneralSeriesModule" : {
+          "type" : "object",
+          "properties" : {
+            "Modality" : {
+              "type" : "string",
+              "default" : "MR"
+            },
+            "SeriesInstanceUID" : {
+              "type" : "UI",
+              "default" : "2.2.2.2"
+            }
+          }
+        },
+
+        "iodFrameOfReferenceModule" : {
+          "type" : "object",
+          "properties" : {
+            "FrameOfReferenceUID" : {
+              "type" : "UI",
+              "default" : "3.3.3.3"
+            }
+          }
+        }
+      }
     }
   }
 }
