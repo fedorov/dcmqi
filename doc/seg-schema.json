@@ -6,7 +6,7 @@
   "oneOf" : [
     { "required" : ["compositeContext"] },
     { "required" : ["dicomInstancesFileNameList"]}
-  },
+  ],
 
 
   "seriesAttributes": {
