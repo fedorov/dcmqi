@@ -64,6 +64,5 @@
     "$ref" : "http://qiicr.org/schema/dcmqi/common-schema.json#/definitions/CS",
     "default" : "U",
     "required" : true
-  },
-  "LUTLabel"
+  }
 }

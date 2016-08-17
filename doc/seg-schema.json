@@ -4,10 +4,9 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
 
   "oneOf" : [
-    { "required" : ["compositeContext"] },
-    { "required" : ["dicomInstancesFileNameList"]}
+    { "required" : [ {"$ref": "http://qiicr.org/schema/dcmqi/common-schema.json#/definitions/compositeContext" }]},
+    { "required" : [ {"$ref":"http://qiicr.org/schema/dcmqi/common-schema.json#/definitions/compositeContext/dicomInstancesFileNameList"}]}
   ],
-
 
   "seriesAttributes": {
     "type" : "object",

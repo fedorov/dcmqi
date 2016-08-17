@@ -1,6 +1,8 @@
 {
   "@schema" : "http://qiicr.org/schema/dcmqi/seg-schema.json",
 
+  "dicomInstancesFileNameList" : ["01.dcm","02.dcm","03.dcm"],
+
   "seriesAttributes": {
     "ContentCreatorName": "Reader1",
     "ClinicalTrialSeriesID": "Session1",

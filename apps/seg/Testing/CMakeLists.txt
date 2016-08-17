@@ -6,6 +6,9 @@ add_test(NAME ${MODULE_NAME}_hello
 set(BASELINE ${CMAKE_SOURCE_DIR}/data/ct-3slice/)
 
 include_directories(${ITK_INCLUDE_DIRS})
+
+add_definitions(-DDICOM_DATA_DIR=${CMAKE_SOURCE_DIR}/data/ct-3slice})
+
 add_executable(${MODULE_NAME}Test ${MODULE_NAME}Test.cxx )
 target_link_libraries(${MODULE_NAME}Test ${${MODULE_NAME}_TARGET_LIBRARIES})
 set_target_properties(${MODULE_NAME}Test PROPERTIES LABELS ${MODULE_NAME})
@@ -30,4 +33,5 @@ add_test(NAME ${MODULE_NAME}_makeSEG
         --segImageFiles ${BASELINE}/liver_seg.nrrd
         --dicomImageFiles ${BASELINE}/01.dcm,${BASELINE}/02.dcm,${BASELINE}/03.dcm
         --segDICOMFile ${TEMP_DIR}/liver.dcm
+        --dicomDataDir ${CMAKE_SOURCE_DIR}/data/ct-3slice
        )

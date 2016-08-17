@@ -3,6 +3,10 @@
 
 #include "ImageSEGConverter.h"
 
+#include <unistd.h>
+
+#include "json/json.h"
+
 int main(int argc, char *argv[])
 {
   PARSE_ARGS;

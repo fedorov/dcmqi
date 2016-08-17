@@ -27,6 +27,14 @@
     </string-vector>
 
     <file>
+      <name>dicomDataDir</name>
+      <label>DICOM data dir</label>
+      <channel>input</channel>
+      <longflag>dicomDataDir</longflag>
+      <description>Location of input DICOM Data</description>
+    </file>
+
+    <file>
       <name>metaDataFileName</name>
       <label>JSON metadata file</label>
       <channel>input</channel>
