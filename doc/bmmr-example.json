@@ -31,10 +31,10 @@
           "CodingSchemeDesignator": "SRT",
           "CodeMeaning": "Right and left"
         },
-        "RecommendedDisplayRGBValue": [
-          "252",
-          "226",
-          "234"
+        "recommendedDisplayRGBValue": [
+          252,
+          226,
+          234
         ]
       }
     ]
