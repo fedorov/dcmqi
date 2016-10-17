@@ -45,9 +45,9 @@ static OFLogger dcemfinfLogger = OFLog::getLogger("qiicr.apps");
 #define STATIC_ARRAY_SIZE(a) (sizeof(a)/sizeof(a[0]))
 
 DSRCodedEntryValue json2cev(Json::Value& j){
-  return DSRCodedEntryValue(j["codeValue"].asCString(),
-    j["codingSchemeDesignator"].asCString(),
-    j["codeMeaning"].asCString());
+  return DSRCodedEntryValue(j["CodeValue"].asCString(),
+    j["CodingSchemeDesignator"].asCString(),
+    j["CodeMeaning"].asCString());
 }
 
 void addFileToEvidence(DSRDocument &doc, string dirStr, string fileStr){

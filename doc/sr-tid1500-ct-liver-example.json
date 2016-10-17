@@ -33,112 +33,112 @@
         "SourceSeriesForImageSegmentation": "1.2.392.200103.20080913.113635.2.2009.6.22.21.43.10.23431.1",
         "segmentationSOPInstanceUID": "1.2.276.0.7230010.3.1.4.0.42154.1458337731.665796",
         "Finding": {
-          "codeValue": "T-D0060",
-          "codingSchemeDesignator": "SRT",
-          "codeMeaning": "Organ"
+          "CodeValue": "T-D0060",
+          "CodingSchemeDesignator": "SRT",
+          "CodeMeaning": "Organ"
         },
         "FindingSite": {
-          "codeValue": "T-62000",
-          "codingSchemeDesignator": "SRT",
-          "codeMeaning": "Liver"
+          "CodeValue": "T-62000",
+          "CodingSchemeDesignator": "SRT",
+          "CodeMeaning": "Liver"
         },
         "measurementItems": [
           {
             "value": "37.3289",
             "quantity": {
-              "codeValue": "122713",
-              "codingSchemeDesignator": "DCM",
-              "codeMeaning": "Attenuation Coefficient"
+              "CodeValue": "122713",
+              "CodingSchemeDesignator": "DCM",
+              "CodeMeaning": "Attenuation Coefficient"
             },
             "units": {
-              "codeValue": "[hnsf'U]",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "Hounsfield unit"
+              "CodeValue": "[hnsf'U]",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "Hounsfield unit"
             },
             "derivationModifier": {
-              "codeValue": "R-00317",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Mean"
+              "CodeValue": "R-00317",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Mean"
             }
           },
           {
             "value": "-778",
             "quantity": {
-              "codeValue": "122713",
-              "codingSchemeDesignator": "DCM",
-              "codeMeaning": "Attenuation Coefficient"
+              "CodeValue": "122713",
+              "CodingSchemeDesignator": "DCM",
+              "CodeMeaning": "Attenuation Coefficient"
             },
             "units": {
-              "codeValue": "[hnsf'U]",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "Hounsfield unit"
+              "CodeValue": "[hnsf'U]",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "Hounsfield unit"
             },
             "derivationModifier": {
-              "codeValue": "R-404FB",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Minimum"
+              "CodeValue": "R-404FB",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Minimum"
             }
           },
           {
             "value": "221",
             "quantity": {
-              "codeValue": "122713",
-              "codingSchemeDesignator": "DCM",
-              "codeMeaning": "Attenuation Coefficient"
+              "CodeValue": "122713",
+              "CodingSchemeDesignator": "DCM",
+              "CodeMeaning": "Attenuation Coefficient"
             },
             "units": {
-              "codeValue": "[hnsf'U]",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "Hounsfield unit"
+              "CodeValue": "[hnsf'U]",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "Hounsfield unit"
             },
             "derivationModifier": {
-              "codeValue": "G-A437",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Maximum"
+              "CodeValue": "G-A437",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Maximum"
             }
           },
           {
             "value": "59.1691",
             "quantity": {
-              "codeValue": "122713",
-              "codingSchemeDesignator": "DCM",
-              "codeMeaning": "Attenuation Coefficient"
+              "CodeValue": "122713",
+              "CodingSchemeDesignator": "DCM",
+              "CodeMeaning": "Attenuation Coefficient"
             },
             "units": {
-              "codeValue": "[hnsf'U]",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "Hounsfield unit"
+              "CodeValue": "[hnsf'U]",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "Hounsfield unit"
             },
             "derivationModifier": {
-              "codeValue": "R-10047",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Standard Deviation"
+              "CodeValue": "R-10047",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Standard Deviation"
             }
           },
           {
             "value": "70361.9",
             "quantity": {
-              "codeValue": "G-D705",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Volume"
+              "CodeValue": "G-D705",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Volume"
             },
             "units": {
-              "codeValue": "mm3",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "cubic millimeter"
+              "CodeValue": "mm3",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "cubic millimeter"
             }
           },
           {
             "value": "70.3619",
             "quantity": {
-              "codeValue": "G-D705",
-              "codingSchemeDesignator": "SRT",
-              "codeMeaning": "Volume"
+              "CodeValue": "G-D705",
+              "CodingSchemeDesignator": "SRT",
+              "CodeMeaning": "Volume"
             },
             "units": {
-              "codeValue": "cm3",
-              "codingSchemeDesignator": "UCUM",
-              "codeMeaning": "cubic centimeter"
+              "CodeValue": "cm3",
+              "CodingSchemeDesignator": "UCUM",
+              "CodeMeaning": "cubic centimeter"
             }
           }
         ]
