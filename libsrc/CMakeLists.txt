@@ -1,6 +1,7 @@
 
 #-----------------------------------------------------------------------------
-set(ADDITIONAL_SRCS)
+set(ADDITIONAL_SRCS DICOMFrame.cpp ../include/dcmqi/DICOMFrame.h ImageVolume.cpp ../include/dcmqi/ImageVolume.h SegmentVolume.cpp ../include/dcmqi/SegmentVolume.h)
+>>>>>>> WIP: refactoring of the multiframe conversion implementation
 
 if(DCMQI_BUILTIN_JSONCPP)
   list(APPEND ADDITIONAL_SRCS
@@ -12,10 +13,12 @@ endif()
 set(lib_name dcmqi)
 
 add_library(${lib_name} STATIC
-  ConverterBase.cpp
+  DICOMFrame.cpp
+  ImageVolume.cpp
+  MultiframeConverter.cpp
   Helper.cpp
-  ImageSEGConverter.cpp
-  ParaMapConverter.cpp
+  SegmentationImageConverter.cpp
+  ParametricMapConverter.cpp
   JSONMetaInformationHandlerBase.cpp
   JSONParametricMapMetaInformationHandler.cpp
   JSONSegmentationMetaInformationHandler.cpp

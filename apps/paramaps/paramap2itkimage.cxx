@@ -3,7 +3,7 @@
 
 // DCMQI includes
 #undef HAVE_SSTREAM // Avoid redefinition warning
-#include "dcmqi/ParaMapConverter.h"
+#include "dcmqi/ParametricMapConverter.h"
 #include "dcmqi/internal/VersionConfigure.h"
 
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
   CHECK_COND(sliceFF.loadFile(inputFileName.c_str()));
   DcmDataset* dataset = sliceFF.getDataset();
 
-  pair <FloatImageType::Pointer, string> result =  dcmqi::ParaMapConverter::paramap2itkimage(dataset);
+  pair <FloatImageType::Pointer, string> result =  dcmqi::ParametricMapConverter::paramap2itkimage(dataset);
 
   string fileExtension = dcmqi::Helper::getFileExtensionFromType(outputType);
 
