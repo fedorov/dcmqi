@@ -19,7 +19,6 @@
 
 using namespace std;
 
-
 namespace dcmqi {
 
 
@@ -50,6 +49,9 @@ namespace dcmqi {
     static void checkValidityOfFirstSrcImage(DcmSegmentation *segdoc);
 
     static CodeSequenceMacro* createNewCodeSequence(const string& code, const string& designator, const string& meaning);
+
+    static OFString generateUID();
+    static OFString getTagAsOFString(DcmDataset*, DcmTagKey);
   };
 
 }

@@ -1,7 +1,6 @@
 
 #-----------------------------------------------------------------------------
-set(ADDITIONAL_SRCS DICOMFrame.cpp ../include/dcmqi/DICOMFrame.h ImageVolume.cpp ../include/dcmqi/ImageVolume.h SegmentVolume.cpp ../include/dcmqi/SegmentVolume.h)
->>>>>>> WIP: refactoring of the multiframe conversion implementation
+set(ADDITIONAL_SRCS DICOMFrame.cpp ../include/dcmqi/DICOMFrame.h ImageVolume.cpp ../include/dcmqi/ImageVolume.h SegmentVolume.cpp ../include/dcmqi/SegmentVolume.h MultiframeObject.cpp ../include/dcmqi/MultiframeObject.h ParametricMapObject.cpp ../include/dcmqi/ParametricMapObject.h SegmentationImageObject.cpp ../include/dcmqi/SegmentationImageObject.h ImageVolumeGeometry.cpp ../include/dcmqi/ImageVolumeGeometry.h)
 
 if(DCMQI_BUILTIN_JSONCPP)
   list(APPEND ADDITIONAL_SRCS
