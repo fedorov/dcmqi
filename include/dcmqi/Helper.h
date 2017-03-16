@@ -17,6 +17,8 @@
 // DCMQI includes
 #include "dcmqi/Exceptions.h"
 
+#include <json/json.h>
+
 using namespace std;
 
 namespace dcmqi {
@@ -45,6 +47,9 @@ namespace dcmqi {
 
     static CodeSequenceMacro stringToCodeSequenceMacro(string str);
     static DSRCodedEntryValue stringToDSRCodedEntryValue(string str);
+    static string codeSequenceMacroToString(CodeSequenceMacro);
+
+    static CodeSequenceMacro jsonToCodeSequenceMacro(Json::Value);
 
     static void checkValidityOfFirstSrcImage(DcmSegmentation *segdoc);
 
