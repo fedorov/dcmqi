@@ -333,3 +333,5 @@ else()
   endif()
   include(CPack)
 endif()
+
+set_property(TARGET DCMQI PROPERTY CXX_STANDARD 98)

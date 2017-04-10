@@ -72,3 +72,5 @@ mark_as_superbuild(
   VARS SlicerExecutionModel_DIR:PATH
   LABELS "FIND_PACKAGE"
   )
+
+set_property(TARGET SlicerExecutionModel PROPERTY CXX_STANDARD 98)

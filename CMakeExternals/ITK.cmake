@@ -95,3 +95,5 @@ mark_as_superbuild(
   VARS ITK_DIR:PATH
   LABELS "FIND_PACKAGE"
   )
+
+set_property(TARGET ITK PROPERTY CXX_STANDARD 98)

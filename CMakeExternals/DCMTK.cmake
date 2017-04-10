@@ -95,3 +95,6 @@ mark_as_superbuild(
 # script then takes the DCMTK_CMAKE_DEBUG_POSTFIX variable into account
 # when looking for DCMTK debug libraries.
 mark_as_superbuild(DCMTK_CMAKE_DEBUG_POSTFIX:STRING)
+
+
+set_property(TARGET DCMTK PROPERTY CXX_STANDARD 98)
