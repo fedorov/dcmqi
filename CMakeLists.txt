@@ -10,6 +10,7 @@ set(EXTERNAL_PROJECT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/CMakeExternals)
 set(EXTERNAL_PROJECT_FILE_PREFIX "")
 include(ExternalProject)
 include(ExternalProjectDependency)
+set(CMAKE_CXX_FLAGS -std=c++98)
 
 #-----------------------------------------------------------------------------
 if(APPLE)
