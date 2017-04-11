@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5.0)
 
+set(CXX_STANDARD 98)
+
 #-----------------------------------------------------------------------------
 # Superbuild
 #
@@ -333,5 +335,3 @@ else()
   endif()
   include(CPack)
 endif()
-
-set_property(TARGET DCMQI PROPERTY CXX_STANDARD 98)
