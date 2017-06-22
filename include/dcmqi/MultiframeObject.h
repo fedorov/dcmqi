@@ -89,7 +89,8 @@ protected:
   int initializeDimensions(std::vector<std::pair<DcmTag, DcmTag> >);
   int initializePixelMeasuresFG();
   int initializePlaneOrientationFG();
-  int initializeCommonInstanceReferenceModule(IODCommonInstanceReferenceModule &, vector<set<dcmqi::DICOMFrame,dcmqi::DICOMFrame_compare> >&);
+  int initializeCommonInstanceReferenceModule(IODCommonInstanceReferenceModule &,
+                                              vector<set<dcmqi::DICOMFrame,dcmqi::DICOMFrame_compare> >&);
 
   int mapVolumeSlicesToDICOMFrames(ImageVolumeGeometry&, const vector<DcmDataset*>,
                                           vector<set<dcmqi::DICOMFrame, dcmqi::DICOMFrame_compare> >&);
