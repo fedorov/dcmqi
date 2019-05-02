@@ -40,6 +40,7 @@ namespace dcmqi {
                                                 const string &metaData,
                                                 bool skipEmptySlices=true);
 
+    static bool itkimage2dcmsegWrapper(){return true;};
 
     static pair <map<unsigned,ShortImageType::Pointer>, string> dcmSegmentation2itkimage(DcmDataset *segDataset);
 
