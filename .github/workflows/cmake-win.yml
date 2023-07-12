@@ -59,6 +59,7 @@ jobs:
 
       - name: Build and package
         run: |
+          cd ${{ github.workspace }}\dcmqi-build/
           cmake --build . --config Release -- /m
           cd ${{ github.workspace }}\dcmqi-build\dcmqi-build
           cmake --build . --config Release --target PACKAGE -- /m
